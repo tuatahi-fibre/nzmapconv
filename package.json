@@ -1,7 +1,6 @@
 {
   "name": "nzmapconv",
   "version": "1.0.0",
-  "type": "module",
   "description": "nzmapconv\r =========",
   "main": "index.js",
   "scripts": {

@@ -1,3 +1,3 @@
-import { LINZ } from './www/linz-geodetic';
+const dependency = require('./www/linz-geodetic');
 
-export default LINZ;
+module.exports = dependency.LINZ;
