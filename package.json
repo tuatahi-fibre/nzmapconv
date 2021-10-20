@@ -2,7 +2,7 @@
   "name": "nzmapconv",
   "version": "1.0.0",
   "description": "nzmapconv\r =========",
-  "main": "www/linz-geodetic.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

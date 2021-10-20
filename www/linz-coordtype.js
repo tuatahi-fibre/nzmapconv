@@ -518,4 +518,4 @@ LINZ.CoordType.Topo50MapRef.prototype=Object.create(LINZ.CoordType.MapRef.protot
 
 ///////////////////////////////////////////////////////////////////////////
 
-//module.exports=LINZ.CoordType;
+module.exports=LINZ.CoordType;
