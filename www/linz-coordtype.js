@@ -52,7 +52,7 @@ var LINZ=LINZ || {};
 LINZ.CoordType=function()
 {
     this.options={};
-    this.exampleCoord=null;
+    //this.exampleCoord=null;
 }
 
 LINZ.CoordType.prototype.setOptions=function( options )
@@ -66,10 +66,10 @@ LINZ.CoordType.prototype.setOptions=function( options )
     }
 }
 
-LINZ.CoordType.prototype.example=function()
-{
-    return this.format(this.exampleCoord);
-}
+// LINZ.CoordType.prototype.example=function()
+// {
+//     return this.format(this.exampleCoord);
+// }
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +82,7 @@ LINZ.CoordType.LatLon=function( coordSys )
     this.options.order='EN';      // Options EN,NE
     this.options.format='DMS';    // Options DMS,DM,D
     this.options.precision=0;   // 0-9
-    this.exampleCoord=new LINZ.Geodetic.Location( coordSys, [174.779104,-41.282442] );
+    //this.exampleCoord=new LINZ.Geodetic.Location( coordSys, [174.779104,-41.282442] );
 }
 
 LINZ.CoordType.LatLon.prototype=Object.create(LINZ.CoordType.prototype);
@@ -284,14 +284,14 @@ LINZ.CoordType.Projection=function( coordSys )
     this.options.order='EN';      // Options EN, NE
     this.options.precision=0;   // 0-3
     // Will need to change this if we make coordSys more intelligent!
-    if( this.coordSys == 'NZTM' )
-    {
-        this.exampleCoord=new LINZ.Geodetic.Location( coordSys, [1748798.071,5428003.627] );
-    }
-    else
-    {
-        this.exampleCoord=new LINZ.Geodetic.Location( coordSys, [2659081.071,5989747.627] );
-    }
+    // if( this.coordSys == 'NZTM' )
+    // {
+    //     this.exampleCoord=new LINZ.Geodetic.Location( coordSys, [1748798.071,5428003.627] );
+    // }
+    // else
+    // {
+    //     this.exampleCoord=new LINZ.Geodetic.Location( coordSys, [2659081.071,5989747.627] );
+    // }
 }
 
 LINZ.CoordType.Projection.prototype=Object.create(LINZ.CoordType.prototype);
@@ -483,7 +483,7 @@ LINZ.CoordType.NZMS260MapRef=function()
     this.mapSizeE=40000.0;
     this.mapSizeN=30000.0;
     this.coordSys='NZMG';
-    this.exampleCoord=new LINZ.Geodetic.Location( this.coordSys, [2659081.071,5989747.627] );
+    //this.exampleCoord=new LINZ.Geodetic.Location( this.coordSys, [2659081.071,5989747.627] );
 }
 
 LINZ.CoordType.NZMS260MapRef.prototype=Object.create(LINZ.CoordType.MapRef.prototype);
@@ -511,7 +511,7 @@ LINZ.CoordType.Topo50MapRef=function()
     this.mapSizeE=24000.0;
     this.mapSizeN=36000.0;
     this.coordSys='NZTM';
-    this.exampleCoord=new LINZ.Geodetic.Location( this.coordSys, [1748798.071,5428003.627] );
+    //this.exampleCoord=new LINZ.Geodetic.Location( this.coordSys, [1748798.071,5428003.627] );
 }
 
 LINZ.CoordType.Topo50MapRef.prototype=Object.create(LINZ.CoordType.MapRef.prototype);
