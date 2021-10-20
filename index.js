@@ -1,7 +1,7 @@
-const Geodetic = require('./www/linz-geodetic');
-const CoordType = require('./www/linz-coordtype');
+const linzGeodetic = require('./www/linz-geodetic');
+const linzCoordType = require('./www/linz-coordtype');
 
 module.exports = {
-    Geodetic: Geodetic,
-    CoordType: CoordType,
+    LinzGeodetic: linzGeodetic,
+    LinzCoordType: linzCoordType,
 };
